@@ -51,4 +51,4 @@ jobs:
     steps:
       - name: Deploy TUF-on-CI repository to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@0243b6c10d06cb8e95ed8ee471231877621202c0
+        uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5
