@@ -3,6 +3,10 @@
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
    "sig": ""
+  },
+  {
+   "keyid": "cb4154b03542afd4085fc83374f0691de3573385a881b2b7ff7a135a417c64f0",
+   "sig": "3046022100b89b0ddb1b8a44e52fb3838d9ca835adb7c93d8d07a1de67254aabfe3356264b022100c8a5e56744e0df5ac446ffe05dbad9cb2701a3079c8108d6739d0ef6ba7c7133"
   }
  ],
  "signed": {
@@ -18,6 +22,14 @@
     "scheme": "ecdsa-sha2-nistp256",
     "x-tuf-on-ci-online-uri": "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/efcf226296c54540b1b197488663a228"
    },
+   "cb4154b03542afd4085fc83374f0691de3573385a881b2b7ff7a135a417c64f0": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPvQ7QlQb/UbYbPBzlloZr5hm9D2O\nDp7qAK63VcDPMNHWjV/WUHrIgFS83cLR2DQw/Y9Ydio3TrdawyiFmd+Ycw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@-test-1"
+   },
    "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829": {
     "keytype": "ecdsa",
     "keyval": {
@@ -30,7 +42,8 @@
   "roles": {
    "root": {
     "keyids": [
-     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829"
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+     "cb4154b03542afd4085fc83374f0691de3573385a881b2b7ff7a135a417c64f0"
     ],
     "threshold": 1
    },
