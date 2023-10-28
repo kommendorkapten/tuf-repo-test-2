@@ -2,15 +2,15 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "304402202a3ec90bbde64e80b89f26ce19a50a2ff57a09c512cf0c375ed8cb80e5d3cb6302207759ecc93886886602250746549c7bb0a4b215b0b5ffcb15f8dfeace05e5401a"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2023-12-07T19:19:10Z",
+  "expires": "2023-12-27T19:19:24Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 4,
+  "version": 5,
   "x-tuf-on-ci-expiry-period": 60,
   "x-tuf-on-ci-signing-period": 40
  }
