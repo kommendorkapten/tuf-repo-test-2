@@ -1,0 +1,28 @@
+name: TUF-on-CI online signing
+
+permissions: {}
+
+on:
+  schedule:
+    - cron:  '17 1,7,13,19 * * *'
+  push:
+    branches: [ main ]
+    paths: ['metadata/**']
+  workflow_dispatch:
+
+jobs:
+  online-sign:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: 'write' # for commiting snapshot/timestamp changes
+      actions: 'write' # for dispatching publish workflow
+
+    steps:
+      - id: online-sign
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID}}
+        uses: theupdateframework/tuf-on-ci/actions/online-sign@6d32b9491bcccdf75b64f4c779f0366ad0e35b7e # v0.1.0
