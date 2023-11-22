@@ -25,5 +25,4 @@ jobs:
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
           AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
           AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID}}
-#        uses: theupdateframework/tuf-on-ci/actions/online-sign@6d32b9491bcccdf75b64f4c779f0366ad0e35b7e # v0.1.0
-        uses: kommendorkapten/tuf-on-ci/actions/online-sign@verify-ref
+        uses: theupdateframework/tuf-on-ci/actions/online-sign@df797d1d59a37c90baa15a84ccde6fd8987fa38a
