@@ -2,13 +2,13 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "304402205524715f4eddffc1b0468f5b1069608e94936ddd7c94f6920559939d9fdc73ba0220180cddc116ccf2934372901552691deb7c1e736e5573142c54ec951a601dffbe"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-01-21T09:08:21Z",
+  "expires": "2024-02-05T13:25:59Z",
   "keys": {
    "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587": {
     "keytype": "ecdsa",
@@ -58,7 +58,7 @@
    }
   },
   "spec_version": "1.0.31",
-  "version": 10,
+  "version": 11,
   "x-tuf-on-ci-expiry-period": 60,
   "x-tuf-on-ci-signing-period": 45
  }
